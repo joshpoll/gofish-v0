@@ -15,11 +15,12 @@ const App: Component = () => {
           mark={Rect}
           data={alphabet}
           x="letter"
-          y="frequency"
+          y={0}
           width={10}
-          height={10}
+          height="frequency"
           fill="cornflowerblue"
         />
+        <DiscreteLayout mark={Circle} data={alphabet} x="letter" y="frequency" width={7} height={7} fill="pink" />
       </Plot>
     </div>
   );
