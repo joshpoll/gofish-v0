@@ -14,8 +14,8 @@ const App: Component = () => {
         <DiscreteLayout
           mark={Rect}
           data={alphabet}
-          x={(d: AlphabetType) => d.frequency * 5000}
-          y={30}
+          x="letter"
+          y="frequency"
           width={10}
           height={10}
           fill="cornflowerblue"
