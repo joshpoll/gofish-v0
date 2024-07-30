@@ -12,10 +12,10 @@ const App: Component = () => {
         <Rect x={100} y={100} width={100} height={100} fill="red" />
         <Circle x={200} y={200} width={100} height={100} fill="blue" />
         <DiscreteLayout
+          mark={Rect}
           data={alphabet}
           x={(d: AlphabetType) => d.frequency * 5000}
-          y={(d: AlphabetType) => 30}
-          mark={Rect}
+          y={30}
           width={10}
           height={10}
           fill="cornflowerblue"
